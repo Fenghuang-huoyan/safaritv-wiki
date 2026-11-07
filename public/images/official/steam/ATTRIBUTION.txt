@@ -1,0 +1,92 @@
+Official Steam store assets for Safari-TV (AppID 5118500).
+Self-hosted so the wiki does not hotlink the Steam CDN at page-view time.
+The bytes were downloaded from the Steam store CDN on 7 Nov 2026.
+Asset paths come from IStoreBrowseService GetItems (include_assets) and appdetails screenshots.
+Fan site: not affiliated with Mercy Games, stre1itzia, Blue Ocean Games, Valve, or Steam.
+Store page: https://store.steampowered.com/app/5118500/SafariTV/
+CDN prefix: https://shared.akamai.steamstatic.com/store_item_assets/
+Cache token on these files: t=1793990950
+
+library-hero.jpg
+  Steam library hero, 1920x620. Passengers in an open yellow safari truck, one holding a camera, a giraffe behind the canopy.
+  https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/5118500/f99dee561128c26a4430bff72ede8062256e5163/library_hero.jpg?t=1793990950
+
+library-hero-2x.jpg
+  Steam library hero, 3840x1240
+  https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/5118500/f99dee561128c26a4430bff72ede8062256e5163/library_hero_2x.jpg?t=1793990950
+
+library-capsule.jpg
+  Steam library capsule, 300x450
+  https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/5118500/6dc4af1e6602b27506ea1d019ee675e95a46b68f/library_capsule.jpg?t=1793990950
+
+hero-capsule.jpg
+  Steam hero capsule, 374x448
+  https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/5118500/8c04d9737e9fa162c347e913ab7b35a7d1791ab5/hero_capsule.jpg?t=1793990950
+
+header.jpg
+  Classic store header, 460x215. Same truck scene as the library hero, with the Safari TV logo.
+  https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/5118500/38500a4247747ac23f847e7a6e3e9d03cfad1fcb/header.jpg?t=1793990950
+
+capsule-616x353.jpg
+  Store capsule, 616x353
+  https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/5118500/37ff920b5618fdf16b51c5e4960e6950c5a3600d/capsule_616x353.jpg?t=1793990950
+
+capsule-231x87.jpg
+  Small store capsule, 231x87
+  https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/5118500/eacd323b2693dde4449a53d90e01418f71e4f1c6/capsule_231x87.jpg?t=1793990950
+
+Screenshots are the 600x338 store thumbnails from appdetails on 7 Nov 2026 (t=1793990950).
+Full-size 1920x1080 files exist at the same paths with .1920x1080.jpg. This site stores the thumbnails.
+Captions below describe the thumbnail. They are one promotional frame each, not a balance sheet.
+
+ss-00.jpg
+  First-person view from the open passenger benches, savanna outside.
+  https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/5118500/da3f8adf3f5a9dd762148e228142b161d450e833/ss_da3f8adf3f5a9dd762148e228142b161d450e833.600x338.jpg?t=1793990950
+
+ss-01.jpg
+  Stylized characters gathered at a wooden camp, yellow truck behind them.
+  https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/5118500/eadfab281efcc43bfc8766847f95e63e71f5a84f/ss_eadfab281efcc43bfc8766847f95e63e71f5a84f.600x338.jpg?t=1793990950
+
+ss-02.jpg
+  REC viewfinder on a large horned animal under trees, with characters close to it.
+  https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/5118500/b1eef4977d50c765b10e152624447cacb5d5febf/ss_b1eef4977d50c765b10e152624447cacb5d5febf.600x338.jpg?t=1793990950
+
+ss-03.jpg
+  Yellow open-sided truck with passengers, a large grey animal beside the cab, a character holding a camera.
+  https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/5118500/e368fca2d54d7d88012e840d5e9cb12aaf62368c/ss_e368fca2d54d7d88012e840d5e9cb12aaf62368c.600x338.jpg?t=1793990950
+
+ss-04.jpg
+  A character seated next to an open wooden crate.
+  https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/5118500/dee100d427443470725b85ef920dda825187fe9d/ss_dee100d427443470725b85ef920dda825187fe9d.600x338.jpg?t=1793990950
+
+ss-05.jpg
+  A hippo in tall grass beside a blue portable toilet and a character.
+  https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/5118500/a27903ab874f48639468de30c04a84d87f7b33e7/ss_a27903ab874f48639468de30c04a84d87f7b33e7.600x338.jpg?t=1793990950
+
+ss-06.jpg
+  Close view of the yellow truck with a side panel missing and parts on the ground.
+  https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/5118500/c0b1cf0918d4aa91cb5d0b58b8f0afbb5fb85a56/ss_c0b1cf0918d4aa91cb5d0b58b8f0afbb5fb85a56.600x338.jpg?t=1793990950
+
+ss-07.jpg
+  Cab interior, speedometer visible, a swarm across the windshield.
+  https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/5118500/9ce78c1d7664e78735a1ddc340459ea48309be81/ss_9ce78c1d7664e78735a1ddc340459ea48309be81.600x338.jpg?t=1793990950
+
+ss-08.jpg
+  Characters indoors, watching a television.
+  https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/5118500/4cc0d34f6fb91ed36b69a56f79e54180eccebf26/ss_4cc0d34f6fb91ed36b69a56f79e54180eccebf26.600x338.jpg?t=1793990950
+
+ss-09.jpg
+  Giraffes drinking at a waterhole, two small characters in the grass.
+  https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/5118500/4e9d260783bf26db8ff774b13d462b5a06ec35be/ss_4e9d260783bf26db8ff774b13d462b5a06ec35be.600x338.jpg?t=1793990950
+
+ss-10.jpg
+  REC viewfinder, a lion beside the yellow truck, a character standing to the right.
+  https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/5118500/7d1f615091826effe1a481e5768e755920b147b9/ss_7d1f615091826effe1a481e5768e755920b147b9.600x338.jpg?t=1793990950
+
+ss-11.jpg
+  The yellow truck driving through a wooden camp gateway.
+  https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/5118500/65ac4c7d2359ee0660d63038dc71ec1491cd39b7/ss_65ac4c7d2359ee0660d63038dc71ec1491cd39b7.600x338.jpg?t=1793990950
+
+ss-12.jpg
+  Characters carrying a spare tire and a box on a forest path, truck bodywork in the foreground.
+  https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/5118500/dd950a3fbd60f0739eb10c8d12f1cfcff2bff19d/ss_dd950a3fbd60f0739eb10c8d12f1cfcff2bff19d.600x338.jpg?t=1793990950

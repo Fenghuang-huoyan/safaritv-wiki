@@ -1,0 +1,71 @@
+---
+title: "About the Safari-TV Guide — Disclaimer and Privacy"
+description: "safaritv.wiki is an unofficial English fan guide for Safari-TV. Disclaimer, privacy, and Steam image credits. Analytics is off. This domain's Adsterra banner is on."
+h1: "About this unofficial fan guide"
+section: "About"
+order: 5
+verifiedAgainst: "Site policy for safaritv.wiki, plus the Steam store page and appdetails API checked 7 Nov 2026."
+quickAnswer:
+  - "Safari-TV Guide is a fan site at https://safaritv.wiki. It is not affiliated with Mercy Games, stre1itzia, Blue Ocean Games, Valve, or Steam."
+  - "Pages are English on purpose. Steam lists 31 languages, and only English is marked for full audio. This wiki does not translate the others."
+  - "Artwork is official Steam store art for AppID 5118500, stored with the site. Credits are in the attribution file next to the images."
+  - "analytics.gaId is an empty string, so Google Analytics is not loaded. The Adsterra Native Banner after Quick Answer is on, using this domain's own Get Code. There is no redeem-code page."
+sources:
+  - label: "Steam store — Safari-TV"
+    url: "https://store.steampowered.com/app/5118500/SafariTV/"
+  - label: "Steam community announcements"
+    url: "https://steamcommunity.com/app/5118500/announcements/"
+related:
+  - href: "/guide"
+    label: "Agency guide"
+  - href: "/truck"
+    label: "Truck"
+  - href: "/wildlife"
+    label: "Wildlife"
+  - href: "/coop"
+    label: "Co-op"
+  - href: "/"
+    label: "Home"
+banner: "/images/official/steam/header.jpg"
+bannerAlt: "Official Steam header for Safari-TV, the Safari TV logo over passengers in an open yellow truck"
+---
+
+import Callout from '@framework/components/Callout.astro';
+
+This is a short English wiki for **Safari-TV**, Steam AppID **5118500**, built as a static site for **safaritv.wiki**.
+
+## Disclaimer
+
+safaritv.wiki is an unofficial fan-made guide for *Safari-TV*. It is **not affiliated with, endorsed by, or sponsored by Mercy Games, stre1itzia, Blue Ocean Games, Valve, or Steam**. All game content, names, artwork, and trademarks belong to their respective owners. This site does not sell the game, process purchases, redeem codes, or recover accounts. It is not responsible for purchase decisions or for changes after a pre-release post.
+
+Nothing here is account support. The Steam appdetails support email is empty. The support URL is `https://discord.gg/VbkVvdb4zt`. The Discord icon on the store page points at `https://discord.gg/4Vk7b4u7qk`. The store page also links a YouTube channel, TikTok, Instagram, X, Facebook, and a LinkedIn profile. Those inboxes and chats belong to the people who put them on Steam, not to this wiki.
+
+The [guide](/guide), [truck](/truck), [wildlife](/wildlife), and [co-op](/coop) pages quote dated official text. A figure appears only when the store page, an announcement, or a store screenshot printed it, and it is labeled with that source. There is no codes page. The sources do not publish a redeem program. Contest keys and Discord tickets for streamers are described on the guide, as the posts themselves describe them.
+
+<Callout kind="note" title="What “checked” means">
+“Checked 7 Nov 2026” means the Steam API, the English store page, and the linked announcements were read that day. It does not mean someone played the Early Access build. The game was still marked coming soon, with a store date of 9 Nov 2026.
+</Callout>
+
+## Images
+
+The library hero, library capsule, hero capsule, store header, capsules, and screenshots are official Steam store assets for AppID 5118500, downloaded from the Steam CDN and served from this site so pages do not hotlink Steam. Asset paths come from IStoreBrowseService `include_assets` and from the appdetails screenshot list. The file list and source URLs are in [ATTRIBUTION.txt](/images/official/steam/ATTRIBUTION.txt).
+
+## Privacy
+
+The site is static. It has no accounts and does not ask for your Steam login.
+
+`analytics.gaId` in the site config is an empty string. The base layout does not load Google Analytics.
+
+The Adsterra Native Banner slot named `afterQuickAnswer` is enabled with this site’s own Get Code. Zone id `bf22be7212d999646a322853d7349d4b` loads from `https://bauval.org/21/bf22be7212d999646a322853d7349d4b` on the homepage and guide pages. The container id is `container-bf22be7212d999646a322853d7349d4b`. No advertising script from another game is included. Adult and sensitive categories stay off. The 404 page does not render a slot.
+
+The same privacy note is in the footer of every page, under the heading Privacy. The disclaimer paragraph in that footer is the short form of this page.
+
+## What is still unpublished
+
+- A numeric Steam price. `is_free` is false and `package_groups` was empty on 7 November 2026. The Early Access note says a later increase is possible and that no decision has been made.
+- A parts list or a cost for “upgrade your equipment.”
+- A named wildlife roster, spawn rules, or danger ratings. Screenshots show some animals. The full-version note says more wildlife is planned.
+- Role assignments inside the 2–4 player group.
+- Whether the 20 October playtest line about saving recordings to a PC is still true at the Early Access unlock.
+- macOS and Linux builds. Both platform flags are false, and those requirement blocks were empty.
+- A corrected memory figure. Minimum spec prints 1 MB RAM, which this site does not treat as a confirmed target.

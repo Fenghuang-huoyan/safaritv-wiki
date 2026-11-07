@@ -1,0 +1,38 @@
+[
+  {
+    "q": "When does Safari-TV release?",
+    "a": "Steam’s release_date field on 7 November 2026 is 9 Nov 2026, with coming_soon true. IStoreBrowse also marks it coming soon and Early Access, and the steam_release_date timestamp is 9 Nov 2026, 20:46 UTC. The store page that day showed no user reviews and said the game was not yet available.",
+    "featured": true
+  },
+  {
+    "q": "Who develops and publishes Safari-TV?",
+    "a": "The Steam appdetails payload lists developers Mercy Games and stre1itzia, and publishers Mercy Games and Blue Ocean Games. The website field was null. This wiki is not affiliated with them, or with Valve.",
+    "featured": true
+  },
+  {
+    "q": "What kind of game is Safari-TV?",
+    "a": "The short description says you run a safari agency with friends in chaotic 2–4 player co-op, drive a fully destructible physics-based truck, take care of tourists, survive wildlife, film the chaos, watch the videos together, and grow an in-game channel. Steam’s genre list is Action, Adventure, Indie, and Early Access. This site does not add a tier list.",
+    "featured": true
+  },
+  {
+    "q": "Is there a redeem code page?",
+    "a": "No. The Steam store page checked on 7 November 2026 does not publish a redeem-code box. The 20 October 2026 announcement offered game keys as contest prizes, and the 28 October 2026 announcement told streamers and influencers to request keys with a Discord ticket. Neither post is a public code list. This site does not have a codes page.",
+    "featured": true
+  },
+  {
+    "q": "Can I play on Mac or Linux?",
+    "a": "The Steam appdetails platforms field on 7 November 2026 lists Windows true, and macOS and Linux false. Minimum spec is Windows 10, an Intel Core i5 at 2.5 GHz or equivalent, a GTX 1060 or RX 6600 XT, DirectX 11, broadband, and 5 GB. Recommended is Windows 11, an Intel Core i5 at 3.0 GHz or AMD Ryzen 5 or equivalent, an RTX 2060 or RX 7600xt or equivalent, DirectX 11, broadband, and 5 GB. The minimum block also prints Memory: 1 MB RAM. That figure is what Steam showed. It is far below the rest of the spec, and this site does not treat it as a confirmed hardware target. Recommended does not list a memory figure. Mac and Linux requirement lists were empty."
+  },
+  {
+    "q": "Is there a price yet?",
+    "a": "Not in the sources checked. appdetails on 7 November 2026 has is_free false and an empty package_groups list, so no number was published there. The Early Access question on price says the developers may increase the price as they add content, and that no final decision has been made."
+  },
+  {
+    "q": "How many people play together?",
+    "a": "The store short description and the first About heading both say 2–4 player co-op. The category list is Multi-player, Co-op, Online Co-op, and Family Sharing. Single-player is not in that list. The page does not print a separate split-screen or shared-screen category."
+  },
+  {
+    "q": "Is this site official?",
+    "a": "No. safaritv.wiki is a fan guide. It is not affiliated with Mercy Games, stre1itzia, Blue Ocean Games, Valve, or Steam. The support URL on the appdetails payload is a Discord invite, and the store page icon uses a different Discord invite. The support email field was empty. Those channels are the developers’, not this wiki’s."
+  }
+]

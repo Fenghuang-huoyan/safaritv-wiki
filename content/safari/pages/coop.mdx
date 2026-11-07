@@ -1,0 +1,87 @@
+---
+title: "Safari-TV Co-op — 2–4 Players, Tourists, and Shared Footage"
+description: "Safari-TV co-op from the Steam page: 2–4 players, online co-op categories, tourists, shared filming, and what the Early Access note says a group does."
+h1: "How co-op is described before launch"
+section: "Co-op"
+order: 4
+verifiedAgainst: "Steam appdetails categories and short description, Early Access developer notes, store screenshots, and the 20 Oct 2026 playtest announcement. Checked 7 Nov 2026."
+quickAnswer:
+  - "Safari-TV’s short description and the first About heading both say 2–4 player co-op. The category list is Multi-player, Co-op, Online Co-op, and Family Sharing."
+  - "The Early Access note describes the group activity as exploring the safari, filming wildlife, transporting tourists, upgrading equipment, and causing chaos with friends. It also says multiplayer will be improved for the full version."
+  - "Filming has a second step in the About text: post videos for in-game views and subscribers, then watch those videos with friends. A store screenshot shows characters indoors in front of a television."
+  - "Steam does not publish roles, a host setting, or a split-screen category. The minimum and recommended specs both require broadband."
+sources:
+  - label: "Steam store — Safari-TV"
+    url: "https://store.steampowered.com/app/5118500/SafariTV/"
+  - label: "Video contest and playtest recordings, 20 Oct 2026"
+    url: "https://steamcommunity.com/app/5118500/announcements/detail/1847286114027004"
+  - label: "Pre-launch keys note, 28 Oct 2026"
+    url: "https://steamcommunity.com/app/5118500/announcements/detail/1847920302232075"
+related:
+  - href: "/guide"
+    label: "Agency guide"
+  - href: "/truck"
+    label: "The safari truck"
+  - href: "/wildlife"
+    label: "Wildlife"
+  - href: "/"
+    label: "Home"
+banner: "/images/official/steam/ss-01.jpg"
+bannerAlt: "Official Steam screenshot of several stylized characters gathered at a wooden camp, with a yellow safari truck behind them"
+---
+
+import Callout from '@framework/components/Callout.astro';
+
+The co-op page is the player-count and “what a group does” page. The actions below are the ones Steam and the Early Access note already use. They are not a ranked tactic list, and they are not damage numbers from a playtest.
+
+## The count, and the category list
+
+Two pieces of store copy say **2–4 player co-op**: the short description, and the first About heading (“Run your own safari agency with friends in 2–4 player co-op”). The appdetails categories on 7 November 2026 are:
+
+- Multi-player
+- Co-op
+- Online Co-op
+- Family Sharing
+
+Single-player is not in that list. IStoreBrowse’s `supported_player_categoryids` are 1, 9, and 38, which are the same Multi-player, Co-op, and Online Co-op entries. Family Sharing is in the feature list (id 62), not in the player-mode list. No shared-screen, split-screen, or Remote Play Together category was in the payload. This page does not invent a couch mode the category list left out, and it does not claim one is impossible. It only reports the list.
+
+Broadband is in both the minimum and the recommended Windows specs, which matches an online co-op category. The page does not describe a listen server, a region lock, or a party size beyond the 2–4 already printed.
+
+The playtest app 5164540 repeats Multi-player, Co-op, and Online Co-op, and does not list Family Sharing. Its release date is 28 Oct 2026. Details are on the [guide](/guide).
+
+## What the developers say a group does
+
+The Early Access current-state answer is the closest thing to a co-op tip that the store itself gives:
+
+> The core co-op experience is playable: explore the safari, film wildlife, transport tourists, upgrade your equipment, and cause chaos with friends. Expect some bugs and rough edges.
+
+That is five verbs, plus a warning about bugs. The full-version answer adds that they plan to improve “performance, multiplayer, and overall polish,” so the launch multiplayer is described as something they still intend to work on.
+
+Mapped back onto the About headings, the same loop is:
+
+1. Run the agency with friends, in that 2–4 range.
+2. Drive the physics truck. The vehicle page is [Truck](/truck). One person is not assigned the wheel in the store text. Screenshots show passengers and a cab, which is a picture of a full truck, not a role sheet.
+3. Take care of tourists and transport them. No ticket price or satisfaction meter is printed.
+4. Film wildlife and the rest of the chaos. The animals that are actually in the screenshots are on [Wildlife](/wildlife).
+5. Post the videos for in-game views and subscribers.
+6. Watch the videos with friends.
+
+<Callout kind="warn" title="No role sheet">
+Store screenshots put several characters in one scene, sometimes with floating name markers, a camera, or a REC overlay. The markers look like player names in a promotional shot. This site does not turn those names into a cast, and it does not assign “driver,” “camera,” or “tourist” as required jobs. If the client ships a role menu, it was not on the store page on 7 November 2026.
+</Callout>
+
+## Watching the footage
+
+“Watch your videos with friends” is its own heading. A store screenshot shows stylized characters indoors, facing a television. The screen in that frame is playing a scene. The store does not say whether that television is the only way to watch, or whether the views and subscribers from the filming heading are the same screen.
+
+![Characters indoors watching a television](/images/official/steam/ss-08.jpg)
+
+The 20 October 2026 announcement is about a playtest, not the Early Access launch. It says 20,000 players had been granted access, that in-game recordings could be saved to a PC, and that a two-day contest wanted those clips on TikTok, Instagram Reels, or YouTube Shorts. Prizes were game keys and Steam gift cards, counted from views on the social posts. That is a playtest export feature as described that week. It is not a redeem-code list, and this site does not know whether “save the recording to a PC” remains worded the same way on 9 November.
+
+The 28 October announcement then narrowed new keys to streamers and influencers who open a Discord ticket. Everyone else was pointed at launch. The [guide](/guide) keeps the dates in order.
+
+## A camp, not a lobby diagram
+
+The camp screenshot is a group of stylized characters in front of wooden buildings, with the yellow truck behind them. It is the image this page uses as its banner. The store does not name the camp, and it does not show a lobby UI in the frames checked. Another frame shows the truck driving through a wooden gateway at the edge of that kind of settlement (`ss-11.jpg` in the art folder). Treat both as location art.
+
+The user-defined tags include Online Co-Op, Multiplayer, Co-op, and Party Game. Party Game is a tag readers added. The developer text says “with friends” and “cause chaos with friends,” which is the line this page uses.
