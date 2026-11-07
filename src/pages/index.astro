@@ -1,0 +1,242 @@
+---
+import { getCollection } from 'astro:content';
+import BaseLayout from '@framework/layouts/BaseLayout.astro';
+import QuickAnswer from '@framework/components/QuickAnswer.astro';
+import AdSlot from '@framework/components/AdSlot.astro';
+import FaqList from '@framework/components/FaqList.astro';
+import { loadData } from '@framework/lib/content';
+import { siteConfig } from '@site/site.config';
+import { faqJsonLd, websiteJsonLd } from '@framework/lib/seo';
+
+const meta = loadData<{
+  release: string;
+  price: string;
+  priceNote: string;
+  players: string;
+  playersNote: string;
+  reviews: string;
+  reviewsNote: string;
+  modes: string;
+  modesNote: string;
+  platforms: string;
+}>('meta');
+
+const faq = loadData<{ q: string; a: string; featured?: boolean }[]>('faq');
+const pages = (await getCollection('pages')).sort((a, b) => a.data.order - b.data.order);
+
+const art = {
+  header: '/images/official/steam/header.jpg',
+  hero: '/images/official/steam/library-hero.jpg',
+  hero2x: '/images/official/steam/library-hero-2x.jpg',
+  capsule: '/images/official/steam/capsule-616x353.jpg',
+  truck: '/images/official/steam/ss-03.jpg',
+  cab: '/images/official/steam/ss-07.jpg',
+  giraffes: '/images/official/steam/ss-09.jpg',
+  camp: '/images/official/steam/ss-01.jpg',
+  film: '/images/official/steam/ss-02.jpg',
+};
+
+const guideArt: Record<string, string> = {
+  guide: art.truck,
+  truck: art.cab,
+  wildlife: art.giraffes,
+  coop: art.camp,
+  about: art.header,
+};
+
+const doors = [
+  {
+    href: '/guide',
+    num: '01',
+    title: 'Guide',
+    text: 'The agency loop Steam actually prints: 2–4 players, the truck, tourists, wildlife, and the in-game channel.',
+    image: art.truck,
+  },
+  {
+    href: '/truck',
+    num: '02',
+    title: 'Truck',
+    text: 'Fully destructible and physics-based, plus the one upgrade sentence. No invented parts list.',
+    image: art.cab,
+  },
+  {
+    href: '/wildlife',
+    num: '03',
+    title: 'Wildlife',
+    text: 'The encounters the store promises, and the animals that show up in the official screenshots.',
+    image: art.giraffes,
+  },
+  {
+    href: '/coop',
+    num: '04',
+    title: 'Co-op',
+    text: 'The 2–4 player wording, the online co-op categories, and watching the footage together.',
+    image: art.camp,
+  },
+];
+
+const stills = [
+  { src: art.truck, caption: 'Open truck' },
+  { src: art.giraffes, caption: 'Giraffes at the water' },
+  { src: art.film, caption: 'REC viewfinder' },
+  { src: art.cab, caption: 'Cab' },
+];
+---
+<BaseLayout
+  title={siteConfig.homeTitle}
+  description={siteConfig.homeDescription}
+  jsonLd={[
+    websiteJsonLd(),
+    faqJsonLd(faq.filter((item) => item.featured).map((item) => ({ q: item.q, a: item.a }))),
+  ]}
+>
+  <main id="content">
+    <div class="shell">
+      <p class="tape">
+        <span>Fan guide · not affiliated with Mercy Games, stre1itzia, or Blue Ocean Games</span>
+        <span>Steam App {siteConfig.steamAppId}</span>
+        <span>{siteConfig.version.label}</span>
+      </p>
+
+      <section class="town-hero">
+        <img
+          class="hero-art"
+          src={siteConfig.art.hero}
+          srcset={`${art.hero} 1920w, ${art.hero2x} 3840w`}
+          sizes="(min-width: 1536px) 1536px, 100vw"
+          alt={siteConfig.art.heroAlt}
+          width="1920"
+          height="620"
+          fetchpriority="high"
+          decoding="async"
+        />
+        <div class="hero-panel">
+          <p class="kicker">Developers {siteConfig.developer} · Publishers {siteConfig.publisher} · Early Access {meta.release}</p>
+          <h1>Run the safari. Film the chaos.</h1>
+          <p class="lede">
+            English pages for Safari-TV: the 2–4 player agency, the destructible truck, the tourists, and the wildlife the store page is willing to show.
+            The Early Access build is still marked coming soon. Where a number was never printed, the page says so.
+          </p>
+          <div class="cta-row">
+            <a class="btn" href="/guide">Guide</a>
+            <a class="btn ghost" href="/truck">Truck</a>
+            <a class="btn ghost" href="/wildlife">Wildlife</a>
+            <a class="btn ghost" href="/coop">Co-op</a>
+            <a class="btn ghost" href={siteConfig.steamUrl}>View on Steam</a>
+          </div>
+          <p class="version-note">{siteConfig.version.detail}</p>
+        </div>
+      </section>
+      <p class="art-credit">
+        Library hero, capsules, header, and screenshots are official Steam store assets for App {siteConfig.steamAppId}, saved from the store CDN.
+        Credits and source URLs: <a href="/images/official/steam/ATTRIBUTION.txt">ATTRIBUTION.txt</a>.
+      </p>
+
+      <section class="section">
+        <h2>Start here</h2>
+        <p class="section-intro">
+          The agency overview, the truck, the wildlife frames, or the co-op wording. There is no codes page. The sources checked do not list a public redeem program.
+        </p>
+        <div class="door-grid">
+          {doors.map((door) => (
+            <a class="door" href={door.href}>
+              <span class="card-art">
+                <img src={door.image} alt="" width="600" height="338" decoding="async" />
+                <span class="num">{door.num}</span>
+              </span>
+              <span class="card-copy">
+                <h3>{door.title}</h3>
+                <p>{door.text}</p>
+              </span>
+            </a>
+          ))}
+        </div>
+      </section>
+
+      <section class="section" aria-label="Official Steam screenshots">
+        <h2>The store’s own frames</h2>
+        <p class="section-intro">
+          Four screenshots from the Steam page: the open truck, giraffes at a waterhole, a REC viewfinder on a large horned animal, and the cab. They are promotional frames, not a unit catalog.
+        </p>
+        <div class="still-row">
+          {stills.map((still) => (
+            <figure>
+              <img src={still.src} alt="" width="600" height="338" loading="lazy" decoding="async" />
+              <figcaption>{still.caption}</figcaption>
+            </figure>
+          ))}
+        </div>
+      </section>
+
+      <section class="stat-row" aria-label="Steam figures">
+        <div class="stat"><strong>{meta.price}</strong><span>{meta.priceNote}</span></div>
+        <div class="stat"><strong>{meta.reviews}</strong><span>{meta.reviewsNote}</span></div>
+        <div class="stat"><strong>{meta.players}</strong><span>{meta.playersNote}</span></div>
+        <div class="stat"><strong>{meta.modes}</strong><span>{meta.modesNote}</span></div>
+      </section>
+
+      <section class="section home-quick">
+        <QuickAnswer
+          sentences={[
+            'Safari-TV is a co-op game from Mercy Games and stre1itzia, published by Mercy Games and Blue Ocean Games, on Steam (AppID 5118500). The store date is 9 November 2026. On 7 November 2026 the appdetails payload still marked it coming soon, Early Access, Windows only, and not free.',
+            'The short description says you run a safari agency with friends in chaotic 2–4 player co-op, drive a fully destructible physics-based truck, take care of tourists, survive wildlife, film the chaos, watch the videos together, and grow an in-game channel.',
+            'The Early Access note calls that core playable and says the full version should add locations, wildlife, upgrades, and variety over a rough aim of six months. No public price was in the payload.',
+            'There is no redeem-code list. October announcements talk about contest keys and Discord tickets for streamers. They do not publish a code to type in.',
+          ]}
+        />
+        <AdSlot name="afterQuickAnswer" />
+      </section>
+
+      <section class="section">
+        <h2>The pages</h2>
+        <p class="section-intro">
+          English only. A line from the Steam page or a dated announcement is labeled with that date. A missing stat stays missing.
+        </p>
+        <div class="card-grid">
+          {pages.map((page) => (
+            <a class="guide-card" href={`/${page.id}`}>
+              <span class="card-art">
+                <img src={guideArt[page.id] ?? art.header} alt="" width="600" height="338" loading="lazy" decoding="async" />
+              </span>
+              <span class="card-copy">
+                <span class="section-tag">{page.data.section}</span>
+                <h3>{page.data.h1}</h3>
+                <p>{page.data.description}</p>
+              </span>
+            </a>
+          ))}
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="scope">
+          <div>
+            <h2>What this wiki is for</h2>
+            <p>
+              The store page and the official posts live at {siteConfig.databases.map((db, i) => (
+                <>
+                  <a href={db.href}>{db.label}</a>
+                  {i < siteConfig.databases.length - 1 ? ', ' : ''}
+                </>
+              ))}. This site is the skim: the agency, the truck, the wildlife frames, and the co-op wording those sources actually use.
+            </p>
+            <p>
+              Early Access is dated {meta.release}. If the client and this page disagree, trust the client.
+            </p>
+          </div>
+          <div>
+            <h2>In Steam’s words</h2>
+            <p>
+              Developers: {siteConfig.developer}. Publishers: {siteConfig.publisher}. Platforms on the API: {meta.platforms}. Genres: Action, Adventure, Indie, and Early Access. The support email field was empty. The support URL is a Discord invite, and the store page icon uses a second invite. Both are in the footer.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section home-faq">
+        <h2>Short answers</h2>
+        <FaqList featuredOnly />
+      </section>
+    </div>
+  </main>
+</BaseLayout>
