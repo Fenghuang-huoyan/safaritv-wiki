@@ -26,7 +26,7 @@ export const siteConfig = {
   homeDescription:
     'Unofficial English guide to Safari-TV (Steam AppID 5118500). Mercy Games and stre1itzia with Blue Ocean Games. Early Access 9 Nov 2026, 2–4 player co-op, the physics truck, tourists, and wildlife. Not affiliated with the developers or Valve.',
   analytics: {
-    gaId: '',
+    gaId: 'G-3V3EVPD0Y2',
   },
   art: {
     hero: '/images/official/steam/library-hero.jpg',
